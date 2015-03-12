@@ -1,6 +1,5 @@
 # cpp_exercices
 
-
 WordCombinations
 
     Description: return all the combinations of words from a dictionary given.
