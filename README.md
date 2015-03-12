@@ -33,17 +33,17 @@ Word Combinations
 
 Build
 -----
-~~
+~~~
 make all
-~~
+~~~
 
 Run
 ---
-~~
+~~~
 ./main
-~~
+~~~
 Test
 ----
-~~
+~~~
 ./test
-~~
+~~~
