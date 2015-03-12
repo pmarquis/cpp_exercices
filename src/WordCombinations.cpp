@@ -20,7 +20,9 @@ WordCombinations::WordCombinations(string& wordDictionary)
 		throw std::invalid_argument("The input does not contain any letter");
 	}
 
-	// Initialize the list which contain the next words to return
+	// Initialize the list which contain the next words to return.
+    // At the first loop on the Next() function, the words return
+    // will be the letters of the dictionary.
 	set<char>::iterator itDictionary = m_dictionary.begin();
 	set<char>::iterator itDictionaryEnd = m_dictionary.end();
 	while(itDictionary != itDictionaryEnd)
@@ -36,21 +38,24 @@ WordCombinations::WordCombinations(string& wordDictionary)
 /**
 *	Function: Reload
 *
-*	Description: Add the next words with one letter more than the last reload
+*	Description: Create a new list of word using the previous list and the dictionary.
+* 	             The new word are added in m_listTmp.
+*                When it is complete, the m_list is swapped with m_listTmp.
+*				 m_listTmp is cleared, ready to be used for the next time.
 **/
 void WordCombinations::Reload()
 {
 	string newWord;
 	set<char>::iterator itDictionary;
-	set<char>::iterator itDictionaryFirst = m_dictionary.begin(); // set as member
-	set<char>::iterator itDictionaryEnd = m_dictionary.end(); // set as member
-	list<string>::iterator it;
+	set<char>::iterator itDictionaryFirst = m_dictionary.begin();
+	set<char>::iterator itDictionaryEnd = m_dictionary.end();
+	list<string>::iterator itList;
 
-	for(it = m_list.begin(); it != m_itListEnd; ++it)
+	for(itList = m_list.begin(); itList != m_itListEnd; ++itList)
 	{
 		for(itDictionary = itDictionaryFirst; itDictionary != itDictionaryEnd; ++itDictionary)
 		{
-			newWord = *it;
+			newWord = *itList;
 			newWord.push_back(*itDictionary);
 			m_listTmp.push_back(newWord);
 		}

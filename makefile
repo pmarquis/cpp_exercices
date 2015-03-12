@@ -1,5 +1,5 @@
 DEBUG_LEVEL     = -g
-EXTRA_CCFLAGS   = -std=c++11 -Wall
+EXTRA_CCFLAGS   = -std=c++11 -W -Wall -Werror
 CXXFLAGS        = $(DEBUG_LEVEL) $(EXTRA_CCFLAGS)
 CCFLAGS         = $(CXXFLAGS)
 CC=g++
