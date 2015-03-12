@@ -5,7 +5,7 @@
 int main()
 {
 	std::string word;
-	std::cout << "Enter a word" << std::endl;
+	std::cout << "Enter a word:" << std::endl;
 	std::cin >> word;
 	WordCombinations wc(word);
 	int counter = 20;
