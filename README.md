@@ -1,6 +1,6 @@
 Word Combinations
 =================
-*   Description: 
+*   Description: \s\s
 				 Return all the combinations of words from a dictionary given.
                  Each time the function Next() is called, that return a new word from the list m_list.
                  When the last element of the list have been given, the function Reload() add all the  
@@ -12,23 +12,23 @@ Word Combinations
 
 *   Output: Next combination of word using the Next() function.Description: return all the combinations of words from a dictionary given.
      
-*   Exemple:
-**    Input: "abc" 
-**    Output:   a
-	            b
-	            c
-	            aa
-	            ab
-	            ac
-	            ba
-	            bb
-	            bc
-	            ca
-	            cb
-	            cc
-	            aaa
-	            aab
-	            … forever
+*   Exemple: \s\s
+    Input: "abc" \s\s
+    Output: a 
+            b
+            c
+            aa
+            ab
+            ac
+            ba
+            bb
+            bc
+            ca
+            cb
+            cc
+            aaa
+            aab
+            … forever
 
 
 Build
