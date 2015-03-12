@@ -13,22 +13,22 @@ Word Combinations
 *   Output: Next combination of word using the Next() function.Description: return all the combinations of words from a dictionary given.
      
 *   Exemple:
-    Input: "abc" 
-    Output: a
-            b
-            c
-            aa
-            ab
-            ac
-            ba
-            bb
-            bc
-            ca
-            cb
-            cc
-            aaa
-            aab
-            … forever
+**    Input: "abc" 
+**    Output:   a
+	            b
+	            c
+	            aa
+	            ab
+	            ac
+	            ba
+	            bb
+	            bc
+	            ca
+	            cb
+	            cc
+	            aaa
+	            aab
+	            … forever
 
 
 Build
