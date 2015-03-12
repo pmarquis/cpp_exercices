@@ -1,6 +1,7 @@
 Word Combinations
 =================
-*   Description: Return all the combinations of words from a dictionary given.
+*   Description: 
+				 Return all the combinations of words from a dictionary given.
                  Each time the function Next() is called, that return a new word from the list m_list.
                  When the last element of the list have been given, the function Reload() add all the  
                  elements with one letter more in the list.
@@ -32,16 +33,17 @@ Word Combinations
 
 Build
 -----
-
+~~
 make all
-
+~~
 
 Run
 ---
-
+~~
 ./main
-
+~~
 Test
 ----
-
+~~
 ./test
+~~
