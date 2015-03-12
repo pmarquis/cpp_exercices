@@ -9,13 +9,13 @@
 
 
 /**
-*	Class: WordCombinations
+*    Class: WordCombinations
 *  
 *   Description: Return all the combinations of words from a dictionary given.
-* 	   			 Each time the function Next() is called, that return a new word from the list m_list.
-*				 When the last element of the list have been given, the function Reload() add all the  
-*				 elements with one letter more in the list.
-*				 When the function Next() return a n letters word, the list contains n^n elements.
+*                     Each time the function Next() is called, that return a new word from the list m_list.
+*                 When the last element of the list have been given, the function Reload() add all the  
+*                 elements with one letter more in the list.
+*                 When the function Next() return a n letters word, the list contains n^n elements.
 *                That limit the words in memory.
 *
 *   Input: Dictionary as a string.
@@ -25,23 +25,23 @@
 class WordCombinations
 {
 public:
-	WordCombinations(std::string& wordDictionary);
-	WordCombinations()
-	{
-		// a parameter wordDictionary is required else an exception is thrown
-		throw std::invalid_argument("Default constructor is forbidden");
-	}
-	virtual ~WordCombinations(){}
-	std::string Next();
+    WordCombinations(std::string& wordDictionary);
+    WordCombinations()
+    {
+        // a parameter wordDictionary is required else an exception is thrown
+        throw std::invalid_argument("Default constructor is forbidden");
+    }
+    virtual ~WordCombinations(){}
+    std::string Next();
 
 private:
-	void Reload();
+    void Reload();
 
-	std::set<char> m_dictionary;
-	std::list<std::string> m_list;
-	std::list<std::string> m_listTmp;
-	std::list<std::string>::iterator m_itList;
-	std::list<std::string>::iterator m_itListEnd;
+    std::set<char> m_dictionary;
+    std::list<std::string> m_list;
+    std::list<std::string> m_listTmp;
+    std::list<std::string>::iterator m_itList;
+    std::list<std::string>::iterator m_itListEnd;
 
 };
 

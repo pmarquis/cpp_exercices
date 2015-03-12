@@ -3,7 +3,7 @@
 
 int main()
 {
-	TestWordCombinations twc;
-	twc.TestAll();
-	return 0;
+    TestWordCombinations twc;
+    twc.TestAll();
+    return 0;
 }
